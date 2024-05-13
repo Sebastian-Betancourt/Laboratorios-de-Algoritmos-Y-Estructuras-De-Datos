@@ -11,6 +11,7 @@ Area =((A+C)*B/2)
 
 # Salida de datos
 print (f"El área de la placa del circuito es de {round(Area,2)} cm^2 ")
+#Hola
 
 
 
