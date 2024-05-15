@@ -21,31 +21,31 @@ año=int(input("Año: "))
 genero=input("Genero F, M, OTROS:")
 
 #Correo 
-correo=input("Ingrese su Usuario o numero de telefono:")
-if len(correo)<=10:
+user=input("Ingrese su Usuario o numero de telefono:")
+if len(cuser)==10:
     print("Su Perfil se ha registrado correctamente")
-while len(correo)>=10:
+while len(user)>=10:
     print("Usuario no Valido")
-    correo=input("Ingrese nuevamente su Usuario o numero de telefono:")
+    user=input("Ingrese nuevamente su Usuario o numero de telefono:")
 
 #Contrseña y Validacion
 contraseña=input("Ingrese una contraseña:")
-ncontraseña=input("Ingrese Nuevamente la contraseña:")
-while contraseña!=ncontraseña:
+conficontraseña=input("Confirme la contraseña:")
+while contraseña!=conficontraseña:
     print("Contraseña Incorrecta")
-    ncontraseña=input("Ingrese Nuevamente la contraseña:")
+    conficontraseña=input("Ingrese Nuevamente la contraseña:")
 
 print("Has completado tu registro")
 
 #---------Inicio de Seccion------------
 
 print("---------Iniciar seccion AED4----------")
-correis=input("Usuario o Numero de Telefono:")
-if correis!=correo:
+userin=input("Usuario o Numero de Telefono:")
+if userin!=user:
     print("Usuario no registrado")
     sys.exit()
 Contr=input("Contraseña")
-if Contr!=ncontraseña:
+if Contr!=conficontraseña:
     print("Contraseña Incorrecta")
     sys.exit()
 print("Has Iniciado Sección")
